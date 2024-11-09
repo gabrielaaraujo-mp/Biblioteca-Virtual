@@ -1,0 +1,138 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff; /* Cor de fundo neutra */
+}
+
+header {
+  background-color: #40cfff; /* Azul Celeste */
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff; /* Título em branco */
+  font-size: 2.5em;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #ffffff; /* Fundo branco */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #40cfff; /* Azul Celeste */
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #40cfff; /* Borda azul celeste */
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #333;
+}
+
+form input:focus {
+  border-color: #ff6f61; /* Vermelho Claro no foco */
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background-color: #40cfff; /* Azul Celeste */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff6f61; /* Vermelho Claro no hover */
+}
+
+#bookListContainer {
+  margin-top: 30px;
+}
+
+#bookListContainer h2 {
+  font-size: 1.5em;
+  color: #40cfff; /* Azul Celeste */
+  margin-bottom: 15px;
+}
+
+#bookList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#bookList li {
+  background-color: #ffffff; /* Fundo branco */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #40cfff; /* Borda azul celeste */
+  border-radius: 5px;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bookList li div {
+  display: flex;
+  gap: 8px;
+}
+
+#bookList li button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+#bookList li button:first-child {
+  background-color: #ff6f61; /* Vermelho Claro para editar */
+  color: #fff;
+}
+
+#bookList li button:last-child {
+  background-color: #ff4d40; /* Vermelho mais forte para excluir */
+  color: #fff;
+}
+
+#bookList li button:hover:first-child {
+  background-color: #ff8f77; /* Vermelho mais claro para editar no hover */
+}
+
+#bookList li button:hover:last-child {
+  background-color: #e63a3a; /* Vermelho mais escuro para excluir no hover */
+}
